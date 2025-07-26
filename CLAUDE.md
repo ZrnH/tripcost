@@ -26,14 +26,18 @@ This is a simple Node.js/Express trip expense tracking application with MongoDB 
 ### Database Connection
 - MongoDB connection to `mongodb://localhost:27017` 
 - Database name: `tripcost`
-- Uses deprecated MongoDB driver patterns (callbacks instead of async/await)
+- Uses modern async/await patterns with MongoDB driver v6.10.0
 
 ### Dependencies
 - Express 4.17.1 for web framework
-- MongoDB 3.3.4 driver for database operations
+- MongoDB 6.10.0 driver for database operations
 
 ## Notes
 - No tests are currently configured
 - Single monolithic server file architecture
-- Uses older callback-style MongoDB operations
+- Modern async/await patterns implemented
 - No authentication or validation implemented
+- GitHub repository configured with HTTPS authentication
+
+## Development Best Practices
+- Always update claude.md file after big changes
